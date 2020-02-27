@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "@emotion/styled";
 import Title from "./components/Title";
+import Card from "./components/Card";
+import "typeface-poppins";
 
 const StyledWrapper = styled.div``;
 
@@ -14,6 +16,8 @@ function App() {
         Our Artificial Intelligence powered tools use millions of project data
         points to ensure that your project is successful
       </p>
+
+      <Card></Card>
 
       <p>
         Supervisor Monitors activity to identify project roadblocks Team Builder
