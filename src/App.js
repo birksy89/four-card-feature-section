@@ -8,7 +8,7 @@ const StyledWrapper = styled.div``;
 
 function App() {
   return (
-    <StyledWrapper is>
+    <StyledWrapper>
       <Title as="h1" light text="Reliable, efficient delivery" />
       <Title as="h2" text="Powered by Technology" />
 
