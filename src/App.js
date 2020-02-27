@@ -11,10 +11,10 @@ function App() {
       <Title as="h2" text="Powered by Technology" />
 
       <p>
-        Reliable, efficient delivery Powered by Technology Our Artificial
-        Intelligence powered tools use millions of project data points to ensure
-        that your project is successful
+        Our Artificial Intelligence powered tools use millions of project data
+        points to ensure that your project is successful
       </p>
+
       <p>
         Supervisor Monitors activity to identify project roadblocks Team Builder
         Scans our talent network to create the optimal team for your project
