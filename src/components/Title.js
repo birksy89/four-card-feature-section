@@ -1,8 +1,10 @@
 import React from "react";
 import styled from "@emotion/styled";
+import "typeface-poppins";
 
 const Heading = styled("h1")`
-  font-weight: ${props => (props.light ? "100" : "800")};
+  font-family: "Poppins";
+  font-weight: ${props => (props.light ? "200" : "600")};
   color: ${props => props.fg};
 `;
 

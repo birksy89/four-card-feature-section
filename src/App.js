@@ -2,13 +2,7 @@ import React from "react";
 import styled from "@emotion/styled";
 import Title from "./components/Title";
 
-const StyledWrapper = styled.div`
-  display: grid;
-  width: 100vw;
-  height: 100vh;
-  max-width: 100%; /* added to fix scrollbar issue*/
-  background-color: hsl(0, 0%, 98%);
-`;
+const StyledWrapper = styled.div``;
 
 function App() {
   return (
