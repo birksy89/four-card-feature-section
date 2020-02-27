@@ -1,12 +1,17 @@
 import React from "react";
 import styled from "@emotion/styled";
+import calculator from "../images/icon-calculator.svg";
 
 const StyledCard = styled.div`
   font-family: "Poppins";
-  font-weight: ${props => (props.light ? "200" : "600")};
-  color: ${props => props.fg};
 `;
 
-export default function Card() {
-  return <StyledCard>dd</StyledCard>;
+export default function Card({ title, children }) {
+  return (
+    <StyledCard>
+      <h3>{title}</h3>
+      {children}
+      <img src={calculator} />
+    </StyledCard>
+  );
 }
