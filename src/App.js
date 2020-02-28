@@ -16,8 +16,13 @@ const AppContainer = styled.div`
 `;
 const GridSetup = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
+  grid-template-columns: 1fr;
+  /* grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); */
+
+  @media (min-width: 800px) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 `;
 
 const StyledParagraph = styled.p`
