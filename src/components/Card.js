@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "@emotion/styled";
-import calculator from "../images/icon-calculator.svg";
 
 const StyledCard = styled.div`
   font-family: "Poppins";
@@ -28,14 +27,14 @@ const TextWrapper = styled.div`
   }
 `;
 
-export default function Card({ title, color = "#ccc", children }) {
+export default function Card({ title, color = "#ccc", svgImage, children }) {
   return (
     <StyledCard>
       <StyledStripe color={color} />
       <TextWrapper>
         <h3>{title}</h3>
         <p>{children}</p>
-        <img alt="" src={calculator} />
+        <img alt="" src={svgImage} />
       </TextWrapper>
     </StyledCard>
   );
