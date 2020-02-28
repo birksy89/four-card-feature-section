@@ -36,22 +36,22 @@ function App() {
 
       <GridSetup>
         <div>
-          <Card title="Supervisor">
+          <Card color="#40d5d3" title="Supervisor">
             Monitors activity to identify project roadblocks
           </Card>
         </div>
 
         <div>
-          <Card title="Team Builder">
+          <Card color="#ea5551" title="Team Builder">
             Scans our talent network to create the optimal team for your project
           </Card>
-          <Card title="Karma">
+          <Card color="#fcae4a" title="Karma">
             Regularly evaluates our talent to ensure quality
           </Card>
         </div>
 
         <div>
-          <Card title="Calculator">
+          <Card color="#519ff2" title="Calculator">
             Uses data from past projects to provide better delivery estimates
           </Card>
         </div>

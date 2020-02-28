@@ -5,27 +5,37 @@ import calculator from "../images/icon-calculator.svg";
 const StyledCard = styled.div`
   font-family: "Poppins";
   background-color: #fff;
-  border-radius: 15px;
+  border-radius: 5px;
   margin: 30px;
   overflow: hidden;
 `;
 const StyledStripe = styled.div`
-  background-color: red;
-  height: 15px;
+  background-color: ${props => props.color};
+  height: 5px;
   width: 100%;
 `;
 const TextWrapper = styled.div`
-  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  margin: 35px;
+
+  h3 {
+    margin-top: 0;
+  }
+
+  img {
+    align-self: flex-end;
+  }
 `;
 
-export default function Card({ title, children }) {
+export default function Card({ title, color = "#ccc", children }) {
   return (
     <StyledCard>
-      <StyledStripe />
+      <StyledStripe color={color} />
       <TextWrapper>
         <h3>{title}</h3>
-        <div>{children}</div>
-        <img src={calculator} />
+        <p>{children}</p>
+        <img alt="" src={calculator} />
       </TextWrapper>
     </StyledCard>
   );
