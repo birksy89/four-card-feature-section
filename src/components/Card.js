@@ -6,7 +6,7 @@ const StyledCard = styled.div`
   font-family: "Poppins";
   background-color: #fff;
   border-radius: 15px;
-
+  margin: 30px;
   overflow: hidden;
 `;
 const StyledStripe = styled.div`
