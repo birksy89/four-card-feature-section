@@ -7,6 +7,7 @@ const StyledCard = styled.div`
   border-radius: 5px;
   margin: 30px;
   overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1), 0 15px 12px rgba(0, 0, 0, 0.15);
 `;
 const StyledStripe = styled.div`
   background-color: ${props => props.color};
@@ -20,6 +21,12 @@ const TextWrapper = styled.div`
 
   h3 {
     margin-top: 0;
+  }
+
+  p {
+    color: #a9a9ab;
+    margin-top: 0;
+    margin-bottom: 40px;
   }
 
   img {
