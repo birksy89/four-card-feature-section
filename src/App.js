@@ -30,16 +30,16 @@ const GridSetup = styled.div`
 
     align-items: center;
 
-    div:nth-child(1) {
+    div:nth-of-type(1) {
       grid-area: a;
     }
-    div:nth-child(2) {
+    div:nth-of-type(2) {
       grid-area: b1;
     }
-    div:nth-child(3) {
+    div:nth-of-type(3) {
       grid-area: b2;
     }
-    div:nth-child(4) {
+    div:nth-of-type(4) {
       grid-area: c;
     }
   }
@@ -50,7 +50,7 @@ const StyledParagraph = styled.p`
   text-align: center;
   color: hsl(229, 6%, 66%);
   max-width: 540px;
-  margin: auto;
+  margin: 1rem auto;
 `;
 
 function App() {

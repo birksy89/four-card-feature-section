@@ -20,6 +20,8 @@ const TextWrapper = styled.div`
   margin: 35px;
 
   h3 {
+    font-size: 1.5rem;
+    color: hsl(234, 12%, 34%);
     margin-top: 0;
   }
 
