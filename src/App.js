@@ -16,12 +16,32 @@ const AppContainer = styled.div`
 `;
 const GridSetup = styled.div`
   display: grid;
-  align-items: center;
   grid-template-columns: 1fr;
-  /* grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); */
 
   @media (min-width: 800px) {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+  @media (min-width: 1200px) {
+    grid-template-columns: none;
+
+    grid-template-areas:
+      "a b1 c"
+      "a b2 c";
+
+    align-items: center;
+
+    div:nth-child(1) {
+      grid-area: a;
+    }
+    div:nth-child(2) {
+      grid-area: b1;
+    }
+    div:nth-child(3) {
+      grid-area: b2;
+    }
+    div:nth-child(4) {
+      grid-area: c;
+    }
   }
 `;
 
@@ -45,26 +65,20 @@ function App() {
       </StyledParagraph>
 
       <GridSetup>
-        <div>
-          <Card color="#40d5d3" title="Supervisor" svgImage={supervisor}>
-            Monitors activity to identify project roadblocks
-          </Card>
-        </div>
+        <Card color="#40d5d3" title="Supervisor" svgImage={supervisor}>
+          Monitors activity to identify project roadblocks
+        </Card>
 
-        <div>
-          <Card color="#ea5551" title="Team Builder" svgImage={teamBuilder}>
-            Scans our talent network to create the optimal team for your project
-          </Card>
-          <Card color="#fcae4a" title="Karma" svgImage={karma}>
-            Regularly evaluates our talent to ensure quality
-          </Card>
-        </div>
+        <Card color="#ea5551" title="Team Builder" svgImage={teamBuilder}>
+          Scans our talent network to create the optimal team for your project
+        </Card>
+        <Card color="#fcae4a" title="Karma" svgImage={karma}>
+          Regularly evaluates our talent to ensure quality
+        </Card>
 
-        <div>
-          <Card color="#519ff2" title="Calculator" svgImage={calculator}>
-            Uses data from past projects to provide better delivery estimates
-          </Card>
-        </div>
+        <Card color="#519ff2" title="Calculator" svgImage={calculator}>
+          Uses data from past projects to provide better delivery estimates
+        </Card>
       </GridSetup>
 
       <p></p>
