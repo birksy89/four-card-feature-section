@@ -53,6 +53,14 @@ const StyledParagraph = styled.p`
   margin: 1rem auto;
 `;
 
+const GridSetupV2 = styled.div`
+  display: grid;
+  /* grid-template-columns: repeat(4, 1fr); */
+  /* grid-template-columns: repeat(4, 500px); */
+  /* grid-template-columns: repeat(4, minmax(250px, 1fr)); */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+`;
+
 function App() {
   return (
     <AppContainer>
@@ -63,6 +71,23 @@ function App() {
         Our Artificial Intelligence powered tools use millions of project data
         points to ensure that your project is successful
       </StyledParagraph>
+
+      <GridSetupV2>
+        <Card ThemeColor="#40d5d3" title="Supervisor" svgImage={supervisor}>
+          Monitors activity to identify project roadblocks
+        </Card>
+
+        <Card ThemeColor="#ea5551" title="Team Builder" svgImage={teamBuilder}>
+          Scans our talent network to create the optimal team for your project
+        </Card>
+        <Card ThemeColor="#fcae4a" title="Karma" svgImage={karma}>
+          Regularly evaluates our talent to ensure quality
+        </Card>
+
+        <Card ThemeColor="#519ff2" title="Calculator" svgImage={calculator}>
+          Uses data from past projects to provide better delivery estimates
+        </Card>
+      </GridSetupV2>
 
       <GridSetup>
         <Card ThemeColor="#40d5d3" title="Supervisor" svgImage={supervisor}>
