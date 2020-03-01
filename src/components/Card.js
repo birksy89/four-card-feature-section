@@ -10,7 +10,7 @@ const StyledCard = styled.div`
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1), 0 15px 12px rgba(0, 0, 0, 0.15);
 `;
 const StyledStripe = styled.div`
-  background-color: ${props => props.color};
+  background-color: ${props => props.ThemeColor};
   height: 5px;
   width: 100%;
 `;
@@ -36,10 +36,15 @@ const TextWrapper = styled.div`
   }
 `;
 
-export default function Card({ title, color = "#ccc", svgImage, children }) {
+export default function Card({
+  title,
+  ThemeColor = "#ccc",
+  svgImage,
+  children
+}) {
   return (
     <StyledCard>
-      <StyledStripe color={color} />
+      <StyledStripe ThemeColor={ThemeColor} />
       <TextWrapper>
         <h3>{title}</h3>
         <p>{children}</p>

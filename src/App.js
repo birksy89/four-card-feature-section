@@ -65,18 +65,18 @@ function App() {
       </StyledParagraph>
 
       <GridSetup>
-        <Card color="#40d5d3" title="Supervisor" svgImage={supervisor}>
+        <Card ThemeColor="#40d5d3" title="Supervisor" svgImage={supervisor}>
           Monitors activity to identify project roadblocks
         </Card>
 
-        <Card color="#ea5551" title="Team Builder" svgImage={teamBuilder}>
+        <Card ThemeColor="#ea5551" title="Team Builder" svgImage={teamBuilder}>
           Scans our talent network to create the optimal team for your project
         </Card>
-        <Card color="#fcae4a" title="Karma" svgImage={karma}>
+        <Card ThemeColor="#fcae4a" title="Karma" svgImage={karma}>
           Regularly evaluates our talent to ensure quality
         </Card>
 
-        <Card color="#519ff2" title="Calculator" svgImage={calculator}>
+        <Card ThemeColor="#519ff2" title="Calculator" svgImage={calculator}>
           Uses data from past projects to provide better delivery estimates
         </Card>
       </GridSetup>
